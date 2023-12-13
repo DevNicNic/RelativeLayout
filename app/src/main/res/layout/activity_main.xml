@@ -11,7 +11,7 @@
         android:id="@+id/text_a"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:text="A"
+        android:text="@string/a"
         android:textSize="28sp" />
 
     <TextView
@@ -20,7 +20,7 @@
         android:id="@+id/text_b"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:text="B"
+        android:text="@string/b"
         android:textSize="28sp" />
 
     <TextView
@@ -30,7 +30,7 @@
         android:id="@+id/text_c"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:text="C"
+        android:text="@string/c"
         android:textSize="28sp" />
 
 </RelativeLayout>
