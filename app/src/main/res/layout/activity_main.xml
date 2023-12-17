@@ -4,33 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:gravity="center"
-        android:id="@+id/text_a"
-        android:layout_width="50dp"
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/a"
-        android:textSize="28sp" />
+        android:hint="@string/distance" />
+
 
     <TextView
-        android:layout_toEndOf="@id/text_a"
-        android:gravity="center"
-        android:id="@+id/text_b"
-        android:layout_width="50dp"
+        android:id="@+id/text_distance"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/b"
-        android:textSize="28sp" />
+        android:layout_below="@id/edit_distance"
+        android:layout_centerHorizontal="true"
+        android:text="@string/totalKms" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_distance"
+        android:hint="@string/price" />
+
 
     <TextView
-        android:layout_below="@id/text_b"
-        android:layout_alignEnd="@id/text_b"
-        android:gravity="center"
-        android:id="@+id/text_c"
-        android:layout_width="50dp"
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/c"
-        android:textSize="28sp" />
+        android:layout_below="@id/edit_price"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price_per_liter" />
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_price"
+        android:hint="@string/autonomy" />
+
+
+    <TextView
+        android:id="@+id/text_autonomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_autonomy"
+        android:layout_centerHorizontal="true"
+        android:text="@string/km_per_liter" />
+
+    <TextView
+        android:id="@+id/text_total_spend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_autonomy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/total_expense" />
+
+    <TextView
+        android:id="@+id/text_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_total_spend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/r_0" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_total_value"
+        android:layout_marginTop="32dp"
+        android:text="@string/calculate" />
 
 </RelativeLayout>
