@@ -12,4 +12,9 @@
     <string name="total_expense">Seu Gasto Total Será de :</string>
     <string name="r_0">R$ 0</string>
     <string name="calculate">Calcular</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="register">Ainda não é cadatrastrado? Cadastre-se!</string>
+    <string name="forgot_your_password">Esqueceu sua senha ?</string>
 </resources>
